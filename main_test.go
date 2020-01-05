@@ -20,4 +20,3 @@ func Test_cashback(t *testing.T) {
 			}
 		}
 	}
-}
