@@ -13,10 +13,10 @@ func Test_cashback(t *testing.T) {
 		{name:"Cashback on bound",amount:3000,want:150},
 	}
 
-	for _, test := range tests {
-		got:=cashback(test.amount)
-		if got!=test.want {
-				t.Error("For cashback test:", test.name ,"got:",got, "want:", tets.want)
+	for _, tests := range test {
+		got:=cashback(tests.amount)
+		if got!=tests.want {
+				t.Error("For cashback test:", tests.name ,"got:",got, "want:", tests.want)
 			}
 		}
 	}
